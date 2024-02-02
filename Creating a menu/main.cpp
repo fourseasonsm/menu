@@ -24,14 +24,18 @@ int main() {
 
 	AS::MenuItem main = { nullptr, AS::show_menu, main_children, main_size };
 
-	main.func(&main);
-	int user_input;
+	read_Pushkin.parent = &read;
+	read_Lermontov.parent = &read;
+	read_Krylov.parent = &read;
+	read_go_back.parent = &read;
+
+	read.parent = &main;
+	exit.parent = &main;
+
+
+	const AS::MenuItem* current = &main;
 	do {
-		std::cin >> user_input;
-		std::cout << std::endl;
-
-		main.children[user_input]->func(main.children[user_input]);
-
+		current = current->func(current);
 	} while (true);
 
 	return 0;
