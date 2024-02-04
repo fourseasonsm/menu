@@ -21,12 +21,18 @@
     <ClCompile Include="menu_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="menu_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="menu.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="menu_functions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu_item.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
