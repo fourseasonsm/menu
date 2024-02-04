@@ -1,4 +1,4 @@
-#include"menu_functions.hpp"
+ï»¿#include"menu_functions.hpp"
 
 #include<cstdlib>
 #include<iostream>
@@ -7,13 +7,13 @@ const AS::MenuItem* AS::exit(const MenuItem* current) {
 	std::exit(0);
 }
 const AS::MenuItem* AS::show_menu(const MenuItem* current) {
-	std::cout << "Âûáåðèòå êíèãó äëÿ ÷òåíèÿ" << std::endl;
+	std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÐºÐ½Ð¸Ð³Ñƒ Ð´Ð»Ñ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ" << std::endl;
 	for (int i = 1; i < current->children_count; i++) {
 		std::cout << current->children[i]->title << std::endl;
 
 	}
 	std::cout << current->children[0]->title << std::endl;
-	std::cout << "Âûáîð êíèãè > ";
+	std::cout << "Ð’Ñ‹Ð±Ð¾Ñ€ ÐºÐ½Ð¸Ð³Ð¸ > ";
 
 	int user_input;
 	std::cin >> user_input;
@@ -24,13 +24,13 @@ const AS::MenuItem* AS::show_menu(const MenuItem* current) {
 }
 
 const AS::MenuItem* AS::read_Pushkin(const MenuItem* current) {
-	std::cout << "Âûáåðèòå ïðîèçâåäåíèå" << std::endl;
+	std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ" << std::endl;
 	for (int i = 1; i < current->children_count; i++) {
 		std::cout << current->children[i]->title << std::endl;
 
 	}
 	std::cout << current->children[0]->title << std::endl;
-	std::cout << "Âûáîð ïðîèçâåäåíèÿ > ";
+	std::cout << "Ð’Ñ‹Ð±Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ñ > ";
 
 	int user_input;
 	std::cin >> user_input;
